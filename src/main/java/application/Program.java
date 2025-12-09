@@ -9,12 +9,12 @@ public class Program {
 
         Scanner scanner = new Scanner(System.in);
 
-        PrintService printService = new PrintService();
+        PrintService<Integer> printService = new PrintService<>();
         System.out.print("How many values? ");
         int n = scanner.nextInt();
 
         for(int i = 0; i < n; i++) {
-            printService.addValue(scanner.next());
+            printService.addValue(scanner.nextInt());
         }
 
         printService.print();

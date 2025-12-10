@@ -34,6 +34,7 @@ public class Client {
         return Objects.equals(name, client.name) && Objects.equals(email, client.email);
     }
 
+    //eu decido como o hashcode deve ser atribuido
     @Override
     public int hashCode() {
         return Objects.hash(name, email);

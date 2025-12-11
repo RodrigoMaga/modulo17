@@ -29,6 +29,6 @@ public class Program7 {
             System.out.println("Error: " + e.getMessage());
         }
 
-        System.out.println("Total users: " + usersList.toArray().length);
+        System.out.println("Total users: " + usersList.size());
     }
 }
